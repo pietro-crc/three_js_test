@@ -1,7 +1,7 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.133.1";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/controls/OrbitControls.js";
 import { ImprovedNoise } from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/math/ImprovedNoise.js";
-import getStarfield from "../src/getStarfield.js";
+import getStarfield from "./src/getStarfield.js";
 
 var scene, camera, renderer;
 
@@ -142,7 +142,7 @@ const loader = new THREE.TextureLoader();
 
 const geometry1 = new THREE.IcosahedronGeometry(1,12);
 const material1 = new THREE.MeshStandardMaterial({
-    map: loader.load("../png/heart_map.jpg"),
+    map: loader.load("/heart_map.jpg"),
  
 });
 const cube = new THREE.Mesh(geometry1, material1);
@@ -158,7 +158,7 @@ earth_g.add(cube);
 
 const light_m1 = new THREE.MeshBasicMaterial({
   
-    map: loader.load("../png/03_earthlights1k.jpg"),
+    map: loader.load("/03_earthlights1k.jpg"),
     blending: THREE.AdditiveBlending,
   })
   
@@ -168,7 +168,7 @@ const light_m1 = new THREE.MeshBasicMaterial({
   
   
   const cloud = new THREE.MeshStandardMaterial({
-      map: loader.load("../png/05_earthcloudmaptrans.jpg"),
+      map: loader.load("/05_earthcloudmaptrans.jpg"),
       transparent: true,
       opacity: 0.25,
       blending: THREE.AdditiveBlending,
