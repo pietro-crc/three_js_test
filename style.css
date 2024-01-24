@@ -1,0 +1,121 @@
+ 
+@font-face {
+	font-family: 'Atures';
+	src: url('/atures-font/Atures700PersonalUseOnly-lax5.ttf') format('truetype');
+	font-weight: 700;
+		
+  }
+  @font-face {
+	font-family: 'Atures';
+	src: url('/atures-font/Atures900PersonalUseOnly-oZMB.ttf') format('truetype');
+	font-weight: 900;
+  }
+  ul{
+    list-style: none;
+  }
+.ature{
+	font-family: 'Atures';
+	font-weight: 700;
+	font-size: 50px;
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 100px;
+	color: white;
+}
+
+.ature-inner{
+	font-size: 25px;
+}
+
+header{
+  width: 100%;
+  height: 60px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+
+}
+#right-side-header{
+  display: flex;
+  flex-direction:row;
+  margin-right: 15px;
+  align-items: center;
+}
+
+#container {
+	margin-top: 15px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	margin-inline: auto;
+	width: 1200px;
+	height: 60px;
+	align-items: center;
+	border-radius: 15px;
+	background: rgba( 255, 255, 255, 0.2 );
+	box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
+	backdrop-filter: blur( 3.5px );
+	-webkit-backdrop-filter: blur( 3.5px );
+	border-radius: 10px;
+	
+	
+  }
+#canvas{
+	margin-left: 15px;
+	font-family: 'Urbanist', sans-serif;
+	font-weight: bolder;
+	font-size: x-large;
+}
+#ul-header{
+  display: flex;
+  flex-direction:row;
+  
+   gap: 10px;
+  align-items: center;
+  font-family: 'Urbanist', sans-serif;
+  font-weight:normal;
+  font-size:17px;
+  
+  margin-right: 20px;
+}
+#contacts{
+	font-family: 'Urbanist', sans-serif;
+	font-weight:normal;
+	font-size:17px;
+}
+
+@media (max-width: 1200px) {
+	#container {
+	  margin-top: 15px;
+
+	  display: flex;
+	  flex-direction:row;
+	  justify-content: space-between;
+	  margin-right: 10px;
+	  margin-left: 10px;
+	  width: 98%;
+	  height: 60px;
+	  align-items: center;
+	  border-radius: 15px;
+	  background: rgba( 255, 255, 255, 0.2 );
+	  box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
+	  backdrop-filter: blur( 3.5px );
+	  -webkit-backdrop-filter: blur( 3.5px );
+	  border-radius: 10px;
+	  
+	  
+	}
+  }
+
+.fadeOut {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
