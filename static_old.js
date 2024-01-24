@@ -142,7 +142,7 @@ const loader = new THREE.TextureLoader();
 
 const geometry1 = new THREE.IcosahedronGeometry(1,12);
 const material1 = new THREE.MeshStandardMaterial({
-    map: loader.load("./heart_map.jpg"),
+    map: loader.load("heart_map.jpg"),
  
 });
 const cube = new THREE.Mesh(geometry1, material1);
