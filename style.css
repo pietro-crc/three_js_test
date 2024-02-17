@@ -119,3 +119,35 @@ header{
 }
 
 
+.btn-start-animation-intro{
+
+
+		
+		color: black;
+
+		margin: 2px solid black;
+		border-radius: 10px;
+		padding : 5px;
+		font-size: 20px;
+		font-family: 'Urbanist', sans-serif;
+		font-weight: bolder;
+
+	
+}
+.btn-jump-animation{
+		color: black;
+		margin: 2px solid black;
+		border-radius: 10px;
+		padding : 5px;	
+		font-size: 20px;
+		font-family: 'Urbanist', sans-serif;
+		font-weight: bolder;
+
+}
+
+.first-page-btn{
+	display:flex;	
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
