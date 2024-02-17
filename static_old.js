@@ -245,7 +245,9 @@ const light_m1 = new THREE.MeshBasicMaterial({
 
 
 
-window.addEventListener("wheel", function(event){
+
+document.querySelector(".start-animation").addEventListener("click", function(event){
+   
     // farlo ma con uyn click del mouse , più efficace 
     if (event.deltaY > 0) {
         acceleration = 0.0000295;
@@ -288,7 +290,7 @@ window.addEventListener("wheel", function(event){
         
 
         earth_g.position.z -= 700
-        this.setTimeout(function(){
+        setTimeout(function(){
             for (let i = 0 ; i < 600; i++){
             camera.position.z += -0.0001;
 
