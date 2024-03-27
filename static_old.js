@@ -246,7 +246,7 @@ const light_m1 = new THREE.MeshBasicMaterial({
 
 
 
-document.querySelector(".start-animation").addEventListener("click", function(event){
+document.querySelector(".start-animation").addEventListener("touchstart", function(event){
    
     // farlo ma con uyn click del mouse , più efficace 
     if (event.deltaY > 0) {
